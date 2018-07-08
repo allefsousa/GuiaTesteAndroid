@@ -29,22 +29,23 @@ public class UnityTestList {
     @Test
     public void testWithAsserts() {
         List<String> list = generateStingList();
-        assertTrue(list.contains("Allef"));
-        assertTrue(list.contains("Bruna"));
+        assertTrue(list.contains("Toquio"));
+        assertTrue(list.contains("Berlim"));
         assertTrue(list.size() > 2);
         assertTrue(list.size() < 13);
+        assertTrue(list.size() == 8);
     }
 
     private List<String> generateStingList() {
         List<String> retorno = new ArrayList<>();
-        retorno.add("Allef");
-        retorno.add("Bruna");
-        retorno.add("Moha");
-        retorno.add("Ademir");
-        retorno.add("Cida");
-        retorno.add("Silvana");
-        retorno.add("Gilmar");
-        retorno.add("Allex");
+        retorno.add("Toquio");
+        retorno.add("Berlim");
+        retorno.add("Moscow");
+        retorno.add("Rio");
+        retorno.add("Nairobi");
+        retorno.add("Denver");
+        retorno.add("Helsinque");
+        retorno.add("Oslo");
 
 
         return  retorno;
