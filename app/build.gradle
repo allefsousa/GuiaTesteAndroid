@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -28,6 +32,7 @@ dependencies {
     androidTestCompile 'com.android.support.test:rules:' + rootProject.rulesVersion;
     compile 'com.google.dagger:dagger-android:2.16'
     compile 'com.google.dagger:dagger-android-support:2.16'
+    androidTestCompile "com.android.support.test.espresso:espresso-intents:$espressoVersion"
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.16'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
